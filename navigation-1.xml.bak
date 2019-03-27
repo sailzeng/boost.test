@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<NAVIGATIONTREE name="QQPET2.0社区" type="NAVIGATION_ROOT" icon="1" display="MODE_COMMON" >
+    <TREENODE name="社区1" type="COMMON_HAS_CHILD" icon="1" display="MODE_COMMON" >
+        <TREENODE name="社区1-1" type="COMMON_HAS_CHILD" icon="1" display="MODE_COMMON" >
+            <TREELEAF name="房间1-1-1" type="LEAF_ENTRY_SOCIETY" icon="2" display="MODE_COMMON" svctype="2" svcid="3" roomid="0" ></TREELEAF>
+            <TREELEAF name="打开WWW.QQ.COM" type="LEAF_BROWSE_WEB" icon="3" display="MODE_COMMON" url="www.qq.com"></TREELEAF>
+        </TREENODE>
+    </TREENODE>
+    <TREENODE name="社区2" type="COMMON_HAS_CHILD" icon="1" display="MODE_EMPHASIZE" >
+        <TREELEAF name="房间2-1" type="LEAF_ENTRY_SOCIETY" icon="3" display="MODE_COMMON" svctype="2" svcid="3" roomid="0" ></TREELEAF>
+    </TREENODE>
+    <ABC>123</ABC>
+</NAVIGATIONTREE>
