@@ -2,10 +2,6 @@
 #ifndef _BOOST_PREDEFINE_H_
 #define _BOOST_PREDEFINE_H_
 
-#define _STLP_DEBUG 1
-//#define _STLP_USE_BOOST_SUPPORT 1  这个宏不要用，要增加的化STLPort代码还有修正一下，
-//#define _STLP_USE_STATIC_LIB 1
-
 
 
 
