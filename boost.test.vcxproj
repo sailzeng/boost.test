@@ -172,6 +172,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boost_any.cpp" />
+    <ClCompile Include="boost_asio.cpp" />
     <ClCompile Include="boost_function.cpp" />
     <ClCompile Include="boost_lockfree.cpp" />
     <ClCompile Include="boost_main.cpp" />

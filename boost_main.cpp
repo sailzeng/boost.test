@@ -22,7 +22,7 @@ Modification History:
 int main(int argc, char *argv[])
 {
 
-    test_lockfree(argc, argv);
+    test_asio_main1(argc, argv);
     return 0;
 };
 

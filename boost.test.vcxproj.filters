@@ -48,6 +48,9 @@
     <ClCompile Include="boost_lockfree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="boost_asio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="boost_predefine.h">

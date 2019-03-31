@@ -3,8 +3,19 @@
 #define _BOOST_PREDEFINE_H_
 
 
+//很多头文件以及数值定义本来可以放到各个OS的配置文件里面去的，但是感觉比较重要，还是放到这个地方了
+// pretend it's at least Windows XP or Win2003，如果不定义这个，有时候会有一些API无法使用的问题
+#if !defined (_WIN32_WINNT)
+#if (defined ZCE_SUPPORT_WINSVR2008) && (ZCE_SUPPORT_WINSVR2008 == 1)
+# define _WIN32_WINNT 0x0600
+#else
+# define _WIN32_WINNT 0x0501
+#endif
+#endif
 
-
+#include <winsock2.h>
+#include <MSWSock.h>
+#include <winerror.h>
 #include <Windows.h>
 #include <Winbase.h>
 
@@ -58,6 +69,16 @@
 //#include <boost/archive/binary_iarchive.hpp>
 //#include <boost/archive/tmpdir.hpp>
 
+#include <cstdlib>
+#include <iostream>
+#include <boost/aligned_storage.hpp>
+#include <boost/array.hpp>
+#include <boost/bind.hpp>
+#include <boost/enable_shared_from_this.hpp>
+#include <boost/noncopyable.hpp>
+#include <boost/shared_ptr.hpp>
+#include <boost/asio.hpp>
+
 
 #include <boost/lockfree/queue.hpp>
 
@@ -69,6 +90,15 @@
 #include <boost/serialization/utility.hpp>
 #include <boost/serialization/list.hpp>
 #include <boost/serialization/assume_abstract.hpp>
+
+
+#include <boost/aligned_storage.hpp>
+#include <boost/array.hpp>
+#include <boost/bind.hpp>
+#include <boost/enable_shared_from_this.hpp>
+#include <boost/noncopyable.hpp>
+#include <boost/shared_ptr.hpp>
+#include <boost/asio.hpp>
 
 
 #pragma warning (default:4099)
@@ -95,6 +125,8 @@ int test_shmem_list_main(int argc, char *argv[]);
 
 int test_lockfree(int argc, char *argv[]);
 
+
+int test_asio_main1(int argc, char *argv[]);
 
 #endif //_BOOST_PREDEFINE_H_
 
